@@ -6,20 +6,25 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="main.js"></script>
-    <form action="">
+    <script src="main.js" defer></script>
+    <form>
       <h1>Create Account:</h1>
       <label for="email">Email:</label>
-      <input type="text" id="email" name="email" />
+      <input required type="text" id="email" name="email" />
       <label for="password">Password:</label>
-      <input type="text" id="password" name="password" />
+      <input required type="text" id="password" name="password" />
       <label for="confirm-password">Confirm Password:</label>
-      <input type="text" id="confirm-password" name="confirm-password" />
+      <input
+        required
+        type="text"
+        id="confirm-password"
+        name="confirm-password"
+      />
       <label for="country">Country:</label>
-      <input type="text" id="country" name="country" />
+      <input required type="text" id="country" name="country" />
       <label for="zipcode">Zip Code:</label>
-      <input type="text" id="zipcode" name="zipcode" />
-      <button type="submit">Submit</button>
+      <input required type="text" id="zipcode" name="zipcode" />
+      <button>Submit</button>
     </form>
   </body>
 </html>
