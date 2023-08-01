@@ -38,3 +38,13 @@ confirm.addEventListener("input", () => {
     confirm.setCustomValidity("");
   }
 });
+
+const zip = document.getElementById("zipcode");
+
+zip.addEventListener("input", () => {
+  if (zip.value.length !== 5 || /^[^0-9]+$/.test(zip.value)) {
+    zip.setCustomValidity("Must be a 5 digit number!");
+  } else {
+    zip.setCustomValidity("");
+  }
+});
