@@ -48,3 +48,15 @@ zip.addEventListener("input", () => {
     zip.setCustomValidity("");
   }
 });
+
+const country = document.getElementById("country");
+
+country.addEventListener("input", () => {
+  if (country.value === "") {
+    country.setCustomValidity("Select a country!");
+    country.classList.add("invalid");
+  } else {
+    country.setCustomValidity("");
+    country.classList.remove("invalid");
+  }
+});

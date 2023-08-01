@@ -19,6 +19,14 @@ form {
   align-items: center;
 }
 
+select {
+  border: 2px black solid;
+}
+
 input:invalid {
+  border-color: red;
+}
+
+.invalid {
   border-color: red;
 }
